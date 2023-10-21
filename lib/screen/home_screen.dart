@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../model/user_model.dart';
 
 class HomeScreen extends StatelessWidget {
-  final User user;
+  final User? user;
 
   HomeScreen({required this.user});
 
@@ -18,9 +18,9 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Welcome, ${user.name}'),
-            Text('Email: ${user.email}'),
-            Text('Phone: ${user.phone}'),
+            Text('Welcome, ${user!.name}'),
+            Text('Email: ${user!.email}'),
+            Text('Phone: ${user!.phone}'),
             // Display other user information
           ],
         ),

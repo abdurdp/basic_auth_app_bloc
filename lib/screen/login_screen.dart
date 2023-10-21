@@ -1,4 +1,6 @@
 // login_screen.dart
+import 'package:basic_auth_app_bloc/model/user_model.dart';
+import 'package:basic_auth_app_bloc/screen/home_screen.dart';
 import 'package:basic_auth_app_bloc/screen/siginup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +13,7 @@ class LoginScreen extends StatelessWidget {
   final ApiService apiService; // Inject your ApiService here
   LoginScreen({required this.apiService});
 
-  Future<void> handleLogin() async {
+  Future<void> handleLogin(BuildContext context) async {
 
     final phone = "1590000000";
     final password = "12345678";
@@ -20,7 +22,10 @@ class LoginScreen extends StatelessWidget {
     final loginSuccess = await apiService.login(phone, password, macAddress);
 
     if (loginSuccess['success']) {
-      // Handle successful login
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => HomeScreen(user: null,)),
+      );
     } else {
       // Handle login failure
     }
@@ -56,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-                    handleLogin();
+                    handleLogin(context);
                   },
                   child: Text(AppLocalizations.of(context).login), // Localized text
                 ),
