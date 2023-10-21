@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
 
     final loginSuccess = await apiService.login(phone, password, macAddress);
 
-    if (loginSuccess['']) {
+    if (loginSuccess['success']) {
       // Handle successful login
     } else {
       // Handle login failure
