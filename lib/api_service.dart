@@ -6,8 +6,9 @@ class ApiService {
   final String baseUrl = 'https://noexceptions.tech/api/user';
 
   Future<Map<String, dynamic>> login(String phone, String password, String macAddress) async {
+    final url = '$baseUrl/login';
     final response = await http.post(
-      '$baseUrl/login' as Uri,
+      Uri.parse(url),
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'phone': phone, 'password': password, 'mac_address': macAddress}),
     );
