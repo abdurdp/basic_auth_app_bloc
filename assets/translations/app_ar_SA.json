@@ -1,0 +1,23 @@
+{
+  "appTitle": "تطبيقي",
+  "login": "تسجيل الدخول",
+  "signup": "التسجيل",
+  "name": "الاسم",
+  "email": "البريد الإلكتروني",
+  "phone": "الهاتف",
+  "password": "كلمة المرور",
+  "themeLight": "الوضع الفاتح",
+  "themeDark": "الوضع الداكن",
+  "submit": "إرسال",
+  "errorLoginFailed": "فشل تسجيل الدخول. الرجاء المحاولة مرة أخرى.",
+  "languageEnglish": "English",
+  "languageBangla": "বাংলা",
+  "languageArabic": "العربية",
+  "gender": "الجنس",
+  "dob": "تاريخ الميلاد",
+  "divisionId": "معرّف القسم",
+  "districtId": "معرّف المنطقة",
+  "address": "العنوان",
+  "macAddress": "عنوان MAC",
+  "profilePhoto": "صورة الملف الشخصي"
+}

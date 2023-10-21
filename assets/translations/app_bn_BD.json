@@ -1,0 +1,23 @@
+{
+  "appTitle": "আমার অ্যাপ",
+  "login": "লগইন",
+  "signup": "নিবন্ধন করুন",
+  "name": "নাম",
+  "email": "ইমেইল",
+  "phone": "ফোন",
+  "password": "পাসওয়ার্ড",
+  "themeLight": "হালকা থিম",
+  "themeDark": "ডার্ক থিম",
+  "submit": "জমা দিন",
+  "errorLoginFailed": "লগইন ব্যর্থ হয়েছে। দয়া করে আবার চেষ্টা করুন।",
+  "languageEnglish": "English",
+  "languageBangla": "বাংলা",
+  "languageArabic": "العربية",
+  "gender": "লিঙ্গ",
+  "dob": "জন্ম তারিখ",
+  "divisionId": "বিভাগ আইডি",
+  "districtId": "জেলা আইডি",
+  "address": "ঠিকানা",
+  "macAddress": "ম্যাক ঠিকানা",
+  "profilePhoto": "প্রোফাইল ছবি"
+}
