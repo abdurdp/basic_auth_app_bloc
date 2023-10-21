@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-                    // Add login logic using API service
+                    handleLogin();
                   },
                   child: Text(AppLocalizations.of(context).login), // Localized text
                 ),
